@@ -1,0 +1,19 @@
+package animal;
+
+public class AnimalTest {
+	public static void main(String[] args) {
+		Animal a=new Animal();
+		a.move();
+		
+		
+		Cat c=new Cat();
+		c.move();
+		
+		
+		Bird b=new Bird();
+		b.move();
+		
+		Animal a2=new Cat();
+		
+	}
+}

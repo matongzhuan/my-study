@@ -1,0 +1,16 @@
+19-07-24
+
+import：需要写在package后面，class前面
+	语法：import 类名 或 import 包名.*
+import之后就可以使用不是与项目同个路径下的类库
+其中java.lang.*不需要手动引入，语言包是java的核心
+
+访问权限修饰符：
+	public		表示公开，在任何位置可以访问
+	protected	表示保护，在同包，子类中可以访问
+	缺省		只能在同包中访问
+	private		表示私有，只能在本类中访问
+
+当某个数据只希望子类访问的话，使用protected
+
+	

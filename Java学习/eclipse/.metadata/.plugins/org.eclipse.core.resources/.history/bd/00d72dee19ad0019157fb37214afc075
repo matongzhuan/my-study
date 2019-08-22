@@ -1,0 +1,10 @@
+package animal;
+
+public class AnimalTest {
+	public static void main(String[] args) {
+		Animal a=new Animal();
+		Cat c=new Cat();
+		Bird b=new Bird();
+		
+	}
+}

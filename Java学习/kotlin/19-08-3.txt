@@ -1,0 +1,8 @@
+19-08-3
+
+kotlin的函数式编程
+简洁、方便理解
+方便程序修改
+
+图片处理
+BufferedImage(int,int,Type)  长、宽、类型

@@ -1,0 +1,14 @@
+package com.chinese;
+
+public class ChineseTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Chinese zhansan=new Chinese("1","zhangsan","zhongguo");
+		System.out.println(zhan);
+	}
+
+}

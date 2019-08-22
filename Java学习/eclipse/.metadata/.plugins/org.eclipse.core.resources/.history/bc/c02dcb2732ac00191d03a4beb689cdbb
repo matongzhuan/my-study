@@ -1,0 +1,8 @@
+package com.javac;
+
+public class Student {
+	String name;
+	int no;
+	int age;
+	boolean sex;
+}

@@ -1,0 +1,15 @@
+19-08-07
+
+依赖管理
+
+
+公共仓库
+	maven center
+	jcenter
+	
+依赖配置阶段
+	编译时：compile
+	测试时依赖：testcompile
+
+TDD：测试驱动开发
+	

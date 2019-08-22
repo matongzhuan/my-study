@@ -1,0 +1,62 @@
+19-07-24
+
+数据库：与企业相关的数据集合
+数据库管理系统（DBMS）：数据库+一组用以访问、更新和管理数据的程序
+	数据访问高效和扩展性
+	缩短应用开发时间
+	数据独立性
+	数据完整性和安全性
+	并发访问和鲁棒性（恢复）
+
+DBMS发展：文件->网状数据模型、层状数据模型->关系模型
+
+现如今市场的主要数据库管理公司：
+	甲骨文（Oracle)、SAP（Sybase）
+	IBM（DB2）
+	微软（SQL-Server）、Access
+开源数据库系统：
+	MySQL：网站上小型系统最流行的开源数据库
+	PostgreSQL：是一个高度可扩展的，开放码源的对象关系型DBMS  
+
+物理层、逻辑层、视图层
+
+数据库语言：DDL（数据定义语言）、DML（数据操纵语言）、DCL（数据控制语言）
+
+SQL（结构化查询语言）：
+	在交互环境中使用：SQL Server、Oracle、MySQL
+	在宿主（C++，Java）语言中，通过ODBC、JDBC使用
+	在宿主语言中使用嵌入式SQL
+事务：在数据库应用中完成单一逻辑功能的操作集合
+
+关系模型（表）：集合，关系
+
+码、键：K值能在一个关系中唯一的标志一个元组，则K是一个超码
+	最小的超码为候选码，被用户选定的候选码为主键
+
+查询语言：用户用来从数据库中请求获取信息的语言
+
+关系代数：基本运算：
+		Select			选择
+		Project			投影
+		Union			并
+		set difference		差
+		Cartesian product	笛卡儿积
+		Rename			更名
+	  附加运算：
+	  	Set intersection	交
+		Natural join		自然连接
+		Division		除
+		Assignment		赋值
+
+SQL：	select	（as）
+	from	（as）
+	where 
+	使用like字符串运算：	%--匹配任意子串
+				_--匹配任意一个字符
+	order by 排序：		desc降序
+				asc升序
+
+	union、intersect、except
+	聚集函数：avg、min、max、sum、count
+	分组聚集：group by
+	having关键词：判断

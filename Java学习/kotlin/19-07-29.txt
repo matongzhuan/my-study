@@ -1,0 +1,146 @@
+19-07-29
+
+主方法：
+fun main(args:Array<String>)
+{
+	
+}
+
+变量声明：
+var name  kotlin会自动类型推断
+var name：String 显示置顶数据类型
+注意：声明时需要给数据赋初始值
+val name  只读，常量 赋值可以使用下划线好看位置：123_234_123
+
+函数声明：
+fun sum(a:int,b:int):int {}  int返回类型，int参数列表
+fun sum(a:int,b:int)=a+b  函数体形式,自动返回类型
+public fun sum(a:int,b:int):int=a+b  public函数必须指明返回类型
+fun sum(a:int,b:int):unit {}  无返回类型
+特殊：
+边长参数函数：fun sum(vararg v:int) {}  关键词vararg
+默认参数，具名参数
+
+字符串
+$varName 表示变量名
+${varName.fun()}表示变量的方法返回值
+
+Null检测机制
+!!与？
+?置于类型后表示可为空：var age:String?="23"
+?置于字段后表示null不做处理：var age:String="23"?.toInt();
+?字段后加可不做处理配合?:做空判断处理：val ages2 = age?.toInt() ?: -1 //为null返回-1
+!!置于字段后表示抛出异常：var age:String="23"!!.toInt();
+
+类型检测及自动类型转换
+is运算符可以用于判断：if(name is String)
+!is自动转换类型：if(name !is String)
+
+区间
+..辅助以in，!in形成：for(i in 1..(downTo、until)4 step 2) print(i) 其中downTo表示倒叙，until表示排除结束元素
+
+比较
+===表示比较对象地址
+==表示值的大小
+
+类型转换函数
+toByte
+toShort
+toInt
+toLong
+toFloat
+toDouble
+toChar
+
+位操作符
+shl(bits) 左移
+shr(bits) 右移
+ushr(bits) 无符号右移
+and(bits) 与
+or(bits) 或
+xor(bits) 异或
+inv() 反向
+
+字符：与Java不同
+不能直接与数字操作，必须用单引号
+特殊字符用反斜杠
+
+数组
+创建的两个方式：arrayOf()、(Int、Short)Array(L,{i->(i*2)})
+
+字符串
+可以使用[]查看某个字符
+支持
+"""
+多行字符串
+""".trimMargin() //删除前置空格
+
+条件控制：if、when
+when与switch相似
+例子：
+when(x){
+   1-> print("")
+   2,3-> print("")
+   in 2..10 -> print("")
+   else ->{
+	print("")	
+   }
+}
+
+循环：for、while
+for(item in collection){}
+如果要通过索引遍历容器：
+for(i in array.indices){
+	print(array[i])
+}
+
+标签：关键字@标签名
+
+类的主构造器：
+class Person constructor(firstName:String){
+	init{
+		println("firstName is $firstName")
+	}
+}
+参数firstName在init代码块中使用 或者初始化属性中使用，并且init代码块在对象创建的时候运行
+
+open类才可以继承，类默认为final
+子类有主构造函数，基类必须在柱构造函数中初始化
+子类中没有主构造函数，则每一个次级构造函数必须用super关键词初始化基类
+
+函数要能被重写，基类中也需要加open关键词，子类中加override关键词
+
+接口：interface
+允许接口中的方法有默认实现
+接口中的属性必须是抽象的，不允许初始化
+
+扩展函数
+主要作用可以对类库函数进行扩展
+fun receiverType.functionName(params){
+}
+扩展函数不是接受者的成员，若扩展函数与成员函数一致，优先使用成员函数
+
+数据类：关键词data
+密封类：关键词sealed，配合when使用，使用密封类作为判断条件的时候，不在需要使用else
+
+泛型（即模板）
+泛型类：
+class Box<T>(t:T){
+	var value=t
+}
+泛型函数：
+fun<T> boxIn(value:T) 类型参数要放在函数名前面
+
+声明处型变：out只能作为输出，in只能作为输入
+
+枚举类：关键字enum
+
+获取输入函数：readline
+
+异常获取：
+try{
+代码块
+}catch(e:Exception){
+代码块
+}
+
