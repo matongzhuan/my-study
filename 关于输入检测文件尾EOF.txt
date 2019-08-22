@@ -1,4 +1,4 @@
-Unix中，Ctrl+D
-Windows中，Ctrl+Z和Enter
+Unix涓紝Ctrl+D
+Windows涓紝Ctrl+Z鍜孍nter
 
-在检测到EOF后，cin将eofbit和failbit都设置为1，可以通过eof（）函数来查看eofbit是否被设置，如果有，则cin.eof()，cin.fail()返回bool值true
+鍦ㄦ娴嬪埌EOF鍚庯紝cin灏唀ofbit鍜宖ailbit閮借缃负1锛屽彲浠ラ�氳繃eof锛堬級鍑芥暟鏉ユ煡鐪媏ofbit鏄惁琚缃紝濡傛灉鏈夛紝鍒檆in.eof()锛宑in.fail()杩斿洖bool鍊紅rue

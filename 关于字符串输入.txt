@@ -1,8 +1,8 @@
-ÃæÏòÐÐµÄÊäÈë£º
-cin.getline(name,size):»ñÈ¡µÄÊäÈëÊÇ´«Èëµ½Êý×éµ±ÖÐµÄ£¬×¢ÒâÊäÈëµÄ×Ö·û²»ÄÜ³¬¹ýsize-1£¬ÓÉÓÚ×Ö·û´®ÒªÒÔ¿Õ×Ö·û×÷Îª½áÎ²
+é¢å‘è¡Œçš„è¾“å…¥ï¼š
+cin.getline(name,size):èŽ·å–çš„è¾“å…¥æ˜¯ä¼ å…¥åˆ°æ•°ç»„å½“ä¸­çš„ï¼Œæ³¨æ„è¾“å…¥çš„å­—ç¬¦ä¸èƒ½è¶…è¿‡size-1ï¼Œç”±äºŽå­—ç¬¦ä¸²è¦ä»¥ç©ºå­—ç¬¦ä½œä¸ºç»“å°¾
 
-cin.get(name,size):ÓëgetlineÀàËÆ£¬µ«ÊÇ²»¶ÁÈ¡¿Õ×Ö·û£¬½«ÆäÁôÔÚÊäÈë¶ÓÁÐÖÐ
-ËùÒÔÐèÒªcin.get()À´»ñÈ¡ÁôÏÂµÄ¿Õ×Ö·û£¬±£Ö¤³ÌÐòÕý³£
+cin.get(name,size):ä¸Žgetlineç±»ä¼¼ï¼Œä½†æ˜¯ä¸è¯»å–ç©ºå­—ç¬¦ï¼Œå°†å…¶ç•™åœ¨è¾“å…¥é˜Ÿåˆ—ä¸­
+æ‰€ä»¥éœ€è¦cin.get()æ¥èŽ·å–ç•™ä¸‹çš„ç©ºå­—ç¬¦ï¼Œä¿è¯ç¨‹åºæ­£å¸¸
 
 
-×¢Òâ£ºµ±ÊäÈëµÄ×Ö·û´®±È·ÖÅäµÄ¿Õ¼ä´óµÄÊ±ºò£¬¶àÓàµÄ×Ö·û»áÁôÔÚÊäÈë¶ÓÁÐÖÐ£¬²¢ÇÒgetline£¨£©»áÉèÖÃÊ§Ð§Î»¡£Õâ¸öÊ±ºò¿ÉÒÔÓÃcin.clear£¨£©À´Çå³ýÊäÈë¶ÓÁÐ
+æ³¨æ„ï¼šå½“è¾“å…¥çš„å­—ç¬¦ä¸²æ¯”åˆ†é…çš„ç©ºé—´å¤§çš„æ—¶å€™ï¼Œå¤šä½™çš„å­—ç¬¦ä¼šç•™åœ¨è¾“å…¥é˜Ÿåˆ—ä¸­ï¼Œå¹¶ä¸”getlineï¼ˆï¼‰ä¼šè®¾ç½®å¤±æ•ˆä½ã€‚è¿™ä¸ªæ—¶å€™å¯ä»¥ç”¨cin.clearï¼ˆï¼‰æ¥æ¸…é™¤è¾“å…¥é˜Ÿåˆ—
